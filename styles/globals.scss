@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove Next.js bullshit */
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.aspect-16-9 {
+  aspect-ratio: 16/9;
+}
+
+.navbar {
+  background-color: rgba(235, 250, 241, 0.6);
+}
