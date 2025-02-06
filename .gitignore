@@ -42,3 +42,5 @@ next-env.d.ts
 
 # media
 /public/*.mp4
+/public/music/*
+/public/images/*

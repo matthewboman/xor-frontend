@@ -9,46 +9,38 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
-  const links = [
-    { title: 'bio', url: '/bio' },
-    { title: 'videos', url: '/videos' },
-  ]
-
-  const dropdowns = [
+  const etc = [
     {
-      title: 'music',
-      links: [
-        {
-          title: "releases",
-          url:   "/releases"
-        },
-        {
-          title: "remixes",
-          url:   "/remixes"
-        },
-        {
-          title: "covers",
-          url:   "/covers"
-        },
-        {
-          title: "compilations",
-          url:   "/compilations"
-        }
-      ]
+      title: 'mastering || mixing',
+      url:   '/mastering'
     },
     {
-      title: 'performances',
-      links: [
-        {
-          title: 'upcomming',
-          url:   '/upcoming-performances'
-        },
-        {
-          title: 'previous',
-          url:   '/previous-performances'
-        }
-      ]
+      title: 'bannik knob',
+      url:   '/bannik-knob'
+    },
+    {
+      title: 'installations',
+      url:   '/installations'
     }
+  ]
+
+  const music = [
+    {
+      title: "releases",
+      url:   "/releases"
+    },
+    {
+      title: "remixes",
+      url:   "/remixes"
+    },
+    {
+      title: "compilations",
+      url:   "/compilations"
+    },
+    {
+      title: "covers",
+      url:   "/covers"
+    },
   ]
 
   return (
@@ -63,18 +55,17 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-4 items-center">
-            {
-              dropdowns.map((d, i) => (
-                <Dropdown key={i} title={d.title} links={d.links} />
-              ))
-            }
-            {
-              links.map((link, i) => (
-                <Link key={i} href={ link.url } className="text-gray-800 hover:text-gray-600">
-                  { link.title }
-                </Link>
-              ))
-            }
+            <Dropdown title={'music'} links={music} />
+            <Link href="/videos" className="text-gray-800 hover:text-gray-600">
+              videos
+            </Link>
+            <Link href="/performances" className="text-gray-800 hover:text-gray-600">
+              performances
+            </Link>
+            <Link href="/bio" className="text-gray-800 hover:text-gray-600">
+              bio
+            </Link>
+            <Dropdown title={'etc'} links={etc} />
           </div>
 
           {/* Mobile Menu Button */}
@@ -106,18 +97,17 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {
-              dropdowns.map((d, i) => (
-                <Dropdown key={i} title={d.title} links={d.links} />
-              ))
-            }
-            {
-              links.map((link, i) => (
-                <Link key={i} href={ link.url } className="block text-gray-800 hover:text-gray-600">
-                  { link.title }
-                </Link>
-              ))
-            }
+            <Dropdown title={'music'} links={music} />
+            <Link href="/videos" className="text-gray-800 hover:text-gray-600 block">
+              videos
+            </Link>
+            <Link href="/performances" className="text-gray-800 hover:text-gray-600 block">
+              performances
+            </Link>
+            <Link href="/bio" className="text-gray-800 hover:text-gray-600 block">
+              bio
+            </Link>
+            <Dropdown title={'etc'} links={etc} />
           </div>
         </div>
       )}
@@ -125,4 +115,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar

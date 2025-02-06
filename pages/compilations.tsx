@@ -1,5 +1,5 @@
 import Layout from '../components/layouts'
-import Release from "../components/release"
+import Release from '../components/release'
 
 export default function Compilations() {
   const compilations = [
