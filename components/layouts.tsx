@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Footer from './footer'
 import Navbar from "./navbar"
 import "../styles/globals.scss"
 
@@ -18,9 +19,10 @@ export default function RootLayout({
         <source src="background.mp4" type="video/mp4"></source>
       </video>
       <Navbar />
-      <div className="overflow-y-auto h-full text-white">
+      <div className="overflow-y-auto h-full text-white pb-[10vh]">
         { children }
       </div>
-    </div>     
+      <Footer />
+    </div>
   )
 }

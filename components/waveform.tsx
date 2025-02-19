@@ -33,12 +33,12 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
   const regions  = RegionsPlugin.create()
   const envelope = EnvelopePlugin.create({
       volume:          0.8,
-      lineColor:       '#ffc800',
+      lineColor:       '#548fe8',
       lineWidth:       '2',
       dragPointSize:   6,
       dragLine:        true,
-      dragPointFill:   '#ffc800',
-      dragPointStroke: '#ffc800',
+      dragPointFill:   '#548fe8',
+      dragPointStroke: '#548fe8',
       points:          envProp,
     })
 
@@ -64,8 +64,8 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
     let ws = WaveSurfer.create({
       container:     waveformRef,
       autoScroll:    false,
-      waveColor:     "#d27f1e",
-      progressColor: "#d27f1e",
+      waveColor:     "#54e8c5",
+      progressColor: "#54e8c5",
       barWidth:      0,
       audioRate:     1,
       plugins:       [ regions, envelope ]
@@ -77,7 +77,7 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
       regions.addRegion({
         start:  startProp,
         end:    stopProp,
-        color:  hexToRgba("#d27f1e"),
+        color:  hexToRgba("#54e8c5"),
         drag:   true,
         resize: true
       })
@@ -99,7 +99,7 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
 
       const audio  = ws.getMediaElement()
       const source = audioContext.current.createMediaElementSource(audio)
-        
+
       panNode.current = audioContext.current.createStereoPanner()
 
       source.connect(panNode.current)
@@ -135,7 +135,7 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
     setPan(panAmount)
 
     const panValue = parseInt(panAmount) / 45 // Normalize value to range [-1, 1]
-   
+
     if (panNode.current) {
       panNode.current.pan.value = panValue // Set the panning position
     }
@@ -171,46 +171,46 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
 
   return (
     <div>
-      {/* Desktop and Tablet Landscape Layout */} 
-      <div className="hidden md:grid grid-cols-[auto_1fr] items-center gap-4">     
+      {/* Desktop and Tablet Landscape Layout */}
+      <div className="hidden md:grid grid-cols-[auto_1fr] items-center gap-4">
         <div>
           <div className="grid grid-cols-2 gap-4 gap-y-8 mb-8">
             <div className="flex flex-col justify-center items-center">
-              <Knob 
-                  value={speed} 
-                  onChange={updateSpeed} 
-                  min={0.25} 
-                  max={4} 
+              <Knob
+                  value={speed}
+                  onChange={updateSpeed}
+                  min={0.25}
+                  max={4}
                   step={0.01}
-                  strokeWidth={10} 
-                  size={60} 
-                  textColor='#d27f1e' 
-                  valueColor='#d27f1e' 
+                  strokeWidth={10}
+                  size={60}
+                  textColor='#54e8c5'
+                  valueColor='#54e8c5'
                   rangeColor='#0a0a0a'/>
                   <br/>
-              <label className="orange mt-2">Speed</label>
+              <label className="teal mt-2">Speed</label>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <Knob 
-                  value={zoom} 
-                  onChange={updateZoom} 
-                  min={10} 
-                  max={1000} 
-                  strokeWidth={10} 
-                  size={60} 
-                  textColor='#d27f1e' 
-                  valueColor='#d27f1e' 
+              <Knob
+                  value={zoom}
+                  onChange={updateZoom}
+                  min={10}
+                  max={1000}
+                  strokeWidth={10}
+                  size={60}
+                  textColor='#54e8c5'
+                  valueColor='#54e8c5'
                   rangeColor='#0a0a0a'/>
                   <br/>
-              <label className="orange mt-2">Zoom</label>
-            </div> 
+              <label className="teal mt-2">Zoom</label>
+            </div>
             <div className="flex justify-center items-center">
-              <label className="orange flex flex-col items-center">
+              <label className="teal flex flex-col items-center">
                 <input
                   type="checkbox"
                   checked={preservePitch}
                   onChange={togglePreservePitch}
-                  className='mb-2 border-orange'
+                  className='mb-2 border-teal'
                   />
                   Preserve pitch
               </label>
@@ -219,7 +219,7 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
               <PlayPauseButton onClick={playPause} />
             </div>
           </div>
-          <div className="hidden md:flex justify-center items-center orange">
+          <div className="hidden md:flex justify-center items-center teal">
             <div className='mr-2'>L</div>
             <input
               id="panner-input"
@@ -228,19 +228,19 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
               max="45"
               defaultValue="0"
               onChange={panAudio}
-              className='border-orange background-orange'
+              className='border-teal background-teal'
             />
             <div className='ml-2'>R</div>
           </div>
         </div>
-        { isMobile ? '' : <div ref={waveformRef} className="waveform-container" /> }  
+        { isMobile ? '' : <div ref={waveformRef} className="waveform-container" /> }
       </div>
 
       {/* Mobile Layout */}
       <div className="md:hidden">
         <div className="mb-8">
           <select
-              className="w-full p-2 border rounded orange-select"
+              className="w-full p-2 border rounded teal-select"
               value={selectedOption}
               onChange={(e) => setSelectedOption(e.target.value)}
           >
@@ -250,73 +250,73 @@ const Waveform: FC<WaveformProps> = ({ audioFile, envProp, startProp, stopProp, 
               <option value="play">Play/Pause</option>
           </select>
           <div className="mt-4 flex flex-col justify-center items-center">
-            { selectedOption === "speed" && <div className="grid grid-cols-2 justify-center items-center gap-4">        
+            { selectedOption === "speed" && <div className="grid grid-cols-2 justify-center items-center gap-4">
                 <div className="flex flex-col items-center">
-                  <Knob 
-                    value={speed} 
-                    onChange={updateSpeed} 
-                    min={0.25} 
-                    max={4} 
+                  <Knob
+                    value={speed}
+                    onChange={updateSpeed}
+                    min={0.25}
+                    max={4}
                     step={0.01}
-                    strokeWidth={10} 
-                    size={60} 
-                    textColor='#d27f1e' 
-                    valueColor='#d27f1e' 
+                    strokeWidth={10}
+                    size={60}
+                    textColor='#54e8c5'
+                    valueColor='#54e8c5'
                     rangeColor='#0a0a0a'/>
                   <br/>
-                  <label className="orange mt-2">Speed</label>
-                </div>      
+                  <label className="teal mt-2">Speed</label>
+                </div>
                 <div className="flex flex-col justify-between items-center h-full">
                   <div className="flex-grow flex justify-center items-center">
                     <input
                       type="checkbox"
                       checked={preservePitch}
                       onChange={togglePreservePitch}
-                      className='border-orange'
+                      className='border-teal'
                     />
                   </div>
-                  <label className="orange text-center">
+                  <label className="teal text-center">
                     Preserve pitch
-                  </label>   
+                  </label>
                 </div>
-                 
+
               </div> }
               { selectedOption === "zoom" && <div className="flex flex-col justify-center items-center">
-              <Knob 
-                  value={zoom} 
-                  onChange={updateZoom} 
-                  min={10} 
-                  max={1000} 
-                  strokeWidth={10} 
-                  size={60} 
-                  textColor='#d27f1e' 
-                  valueColor='#d27f1e' 
+              <Knob
+                  value={zoom}
+                  onChange={updateZoom}
+                  min={10}
+                  max={1000}
+                  strokeWidth={10}
+                  size={60}
+                  textColor='#54e8c5'
+                  valueColor='#54e8c5'
                   rangeColor='#0a0a0a'/>
                   <br/>
-              <label className="orange mt-2">Zoom</label>
+              <label className="teal mt-2">Zoom</label>
               </div> }
               {selectedOption === "pan" && <div className="flex flex-col justify-center items-center">
-              <Knob 
-                  value={pan} 
-                  onChange={panAudio} 
-                  min={-45} 
-                  max={45} 
-                  strokeWidth={10} 
-                  size={60} 
-                  textColor='#d27f1e' 
-                  valueColor='#d27f1e' 
+              <Knob
+                  value={pan}
+                  onChange={panAudio}
+                  min={-45}
+                  max={45}
+                  strokeWidth={10}
+                  size={60}
+                  textColor='#54e8c5'
+                  valueColor='#54e8c5'
                   rangeColor='#0a0a0a'/>
                   <br/>
-              <label className="orange mt-2">Pan</label>
+              <label className="teal mt-2">Pan</label>
               </div> }
               {selectedOption === "play" && <div className="flex justify-center items-center">
               <PlayPauseButton onClick={playPause} />
               </div>}
           </div>
         </div>
-        { isMobile ? <div ref={waveformRef} className="waveform-container" /> : '' }  
+        { isMobile ? <div ref={waveformRef} className="waveform-container" /> : '' }
       </div>
-    </div>    
+    </div>
   )
 }
 

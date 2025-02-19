@@ -38,15 +38,15 @@ export default function Mastering() {
         <div className='my-4 text-center'>
           <h2 className='font-semibold text-2xl mb-6'>Mastering</h2>
         </div>
+        <div className='my-4'>
+          <p>for quotes email xor[dot]whatever[at]gmail</p>
+        </div>
         <div className="flex flex-wrap -mx-4">
           {
             mastering.map((album) => <Release release={album} />)
-          } 
-        </div>
-        <div className='my-4'>
-          <p>for quotes email xor[dot]whatever[at]gmail</p>
+          }
         </div>
       </div>
     </Layout>
   )
-} 
+}

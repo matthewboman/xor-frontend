@@ -2,7 +2,7 @@ import Layout from '../components/layouts'
 import Release from "../components/release"
 
 export default function BannikKnob() {
-  
+
   const releases = [
     {
       title:        "Moss and Mud",
@@ -38,27 +38,27 @@ export default function BannikKnob() {
                   Bannik Knob is a studio and artist residency in the mountains of WNC.
                 </p>
                 <p className='mb-3'>
-                  Our goal is to provide an inspirational space for musicians, 
+                  Our goal is to provide an inspirational space for musicians,
                   visual artists, and writers to create in nature. We also want to
                   help these projects see the light of day.
                 </p>
                 <p className='mb-3'>
                   Money is fake. The studio is free to use, either recording yourself
-                  or working with us. We also offer a residency people outside of the 
+                  or working with us. We also offer a residency for people outside of the
                   region to stay and work on projects.
                 </p>
               </div>
               <hr className='white'/>
               <div className='my-8'>
                 <p className='mb-3'>
-                  A Bannik is an Eastern European bathhouse spirit. The mountainside 
-                  is often full of rainforest-like moisture and billowing 
+                  A Bannik is an Eastern European bathhouse spirit. The mountainside
+                  is often full of rainforest-like moisture and billowing
                   clouds that travel up from the valley and surround the house, making one
-                  feel as though they're are in a steamy sauna. 
+                  feel as though they're are in a steamy sauna.
                 </p>
                 <p className='mb-3'>
-                  A knob is a geographic term specific to the Applachian and Ozark mountains, l
-                  arger than a hill, but just shy of being its own mountain. 
+                  A knob is a geographic term specific to the Applachian and Ozark mountains,
+                  larger than a hill, but just shy of being its own mountain.
                 </p>
               </div>
               <hr className='white'/>
@@ -80,9 +80,9 @@ export default function BannikKnob() {
         <div className="flex flex-wrap -mx-4">
           {
             releases.map((release) => <Release release={release} />)
-          } 
+          }
         </div>
       </div>
     </Layout>
   )
-} 
+}

@@ -59,9 +59,9 @@ const Navbar = () => {
             <Link href="/videos" className="text-gray-800 hover:text-gray-600">
               videos
             </Link>
-            <Link href="/performances" className="text-gray-800 hover:text-gray-600">
+            {/* <Link href="/performances" className="text-gray-800 hover:text-gray-600">
               performances
-            </Link>
+            </Link> */}
             <Link href="/bio" className="text-gray-800 hover:text-gray-600">
               bio
             </Link>
