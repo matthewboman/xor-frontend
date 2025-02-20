@@ -1,4 +1,6 @@
 import dynamic from 'next/dynamic'
+import Clippy from '../components/clippy'
+import Instructions from '../components/infinity_instructions'
 import Layout  from '../components/layouts'
 
 const Waveform = dynamic(() => import('../components/waveform'), {
@@ -157,6 +159,9 @@ export default function Infinity() {
         </div>
         </div>
       </div>
+      <Clippy>
+        <Instructions/>
+      </Clippy>
     </Layout>
   )
 }

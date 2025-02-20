@@ -36,9 +36,7 @@ export default function Bio() {
           </p>
           <p className='my-4'>
             Matthew had been recording under various monikers over the past decade before XOR.
-            Somewhat arbitrarily, he named the project XOR after the logic gate inspired by
-            his burgeoning interest in software development. His debut full-length was an electropop
-            album, written and recorded amidst the pandemic's disquiet.
+            His debut full-length was an electropop album, written and recorded amidst the pandemic's disquiet.
           </p>
           <p className='my-4'>
             In recent years, Matthew began exploring the world of modular synthesizers, reshaping
@@ -48,11 +46,15 @@ export default function Bio() {
             draws inspiration from the ephemeral woodland wildflowers that briefly bloom in Appalachia's
             early spring, mirroring the transient nature of his modular-first compositions.
           </p>
-          <p className='my-4'>
+          {/* <p className='my-4'>
             In 2023, XOR also released the EP "beyond the tall trees somewhere.” Branching out from his
             previously more straightforward darkwave, the five tracks explore the complexities of human
             existence, the nebulous boundaries between natural and artificial, and the discomfort of
             existing in a dying world.
+          </p> */}
+          <p className='my-4'>
+            In 2024, Matthew released 'May the Forest Outlive Us' as Ceremony of Season's summer release.
+            The title of the album is for the Weelaunee forest and the movement to defend it
           </p>
           <p className='mt-4 mb-8 flex justify-center'>
             xor[dot]whatever[at]gmail
