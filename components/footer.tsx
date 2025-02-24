@@ -33,19 +33,21 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="shadow-md navbar absolute bottom-0 w-full flex">
+    <footer className="shadow-md navbar w-full flex absolute bottom-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
-            {
-              icons1.map(i => <Icon icon={i} />)
-            }
-            <div className='px-4'>
-              <Drone />
-            </div>
-            {
-              icons2.map(i => <Icon icon={i} />)
-            }
+        <div className="flex flex-col items-center sm:flex-row sm:justify-between min-h-[3rem]">
+          <div className="flex order-2 sm:order-none gap-2">
+            {icons1.map((i) => (
+              <Icon icon={i} />
+            ))}
+          </div>
+          <div className="order-first sm:order-none px-4">
+            <Drone />
+          </div>
+          <div className="flex order-3 sm:order-none gap-2">
+            {icons2.map((i) => (
+              <Icon icon={i} />
+            ))}
           </div>
         </div>
       </div>
