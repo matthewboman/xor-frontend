@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Footer from './footer'
 import Navbar from "./navbar"
-import "../styles/globals.scss"
+import styles from '../styles/layout.module.scss'
 
 export const metadata: Metadata = {
   title: "XOR",

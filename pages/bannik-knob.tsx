@@ -28,7 +28,7 @@ export default function BannikKnob() {
     <Layout>
       <div className="container mx-auto px-4 mb-10">
         <div className='mt-4 mb-8 flex flex-wrap -mx-4'>
-          <div className="w-full md:w-1/2 p-4 ">
+          <div className="w-full md:w-1/2 p-4">
             <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
               <div className='mb-8'>
                <h2 className='font-semibold text-2xl mb-3'>

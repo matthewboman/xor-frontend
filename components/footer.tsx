@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="flex flex-col items-center sm:flex-row sm:justify-between min-h-[3rem]">
           <div className="flex order-2 sm:order-none gap-2">
             {icons1.map((i) => (
-              <Icon icon={i} />
+              <Icon link={i.link} name={i.name} />
             ))}
           </div>
           <div className="order-first sm:order-none px-4">
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
           <div className="flex order-3 sm:order-none gap-2">
             {icons2.map((i) => (
-              <Icon icon={i} />
+              <Icon link={i.link} name={i.name} />
             ))}
           </div>
         </div>

@@ -101,9 +101,9 @@ const Navbar = () => {
             <Link href="/videos" className="text-gray-800 hover:text-gray-600 block">
               videos
             </Link>
-            <Link href="/performances" className="text-gray-800 hover:text-gray-600 block">
+            {/* <Link href="/performances" className="text-gray-800 hover:text-gray-600 block">
               performances
-            </Link>
+            </Link> */}
             <Link href="/bio" className="text-gray-800 hover:text-gray-600 block">
               bio
             </Link>
