@@ -19,10 +19,23 @@ export default function RootLayout({
         <source src="background.mp4" type="video/mp4"></source>
       </video>
       <Navbar />
-      <div className="overflow-y-auto h-full text-white pb-[10vh]">
+
+      {/* Desktop */}
+      <div className="hidden md:block overflow-y-auto h-full text-white pb-[10vh]">
         { children }
       </div>
-      <Footer />
+      <div className="hidden md:block w-full absolute bottom-0">
+        <Footer />
+      </div>
+
+      {/* Mobile */}
+      <div className="md:hidden overflow-y-auto h-full overflow-scroll text-white">
+        { children }
+        <div className="pb-[4rem]">
+          <Footer />
+        </div>
+      </div>
+
     </div>
   )
 }

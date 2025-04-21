@@ -2,7 +2,6 @@ import Layout  from '../components/layouts'
 import Release from "../components/release"
 import Video   from "../components/video"
 
-
 export default function Remixes() {
   const remixes = [
     // {
@@ -148,4 +147,4 @@ export default function Remixes() {
       </div>
     </Layout>
   )
-} 
+}

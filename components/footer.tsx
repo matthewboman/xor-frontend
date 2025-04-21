@@ -33,9 +33,9 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="shadow-md navbar w-full flex absolute bottom-0">
+    <footer className="shadow-md navbar w-full flex">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between min-h-[3rem]">
+        <div className="flex flex-wrap sm:flex-nowrap items-center sm:justify-between min-h-[3rem]">
           <div className="flex order-2 sm:order-none gap-2">
             {icons1.map((i) => (
               <Icon link={i.link} name={i.name} />
