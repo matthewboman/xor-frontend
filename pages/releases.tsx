@@ -15,7 +15,7 @@ export default function Releases() {
     {
       title:        "May the Forest Outlive Us",
       release_date: "June 20, 2024",
-      info:         "Ambient EP on Ceremony of Seasona. Written and recorded at Bannik Knob.",
+      info:         "Ambient EP on Ceremony of Seasons. Written and recorded at Bannik Knob. Mastered by Marcus Miller at HoloSuite Mastering ",
       image_url:    "https://f4.bcbits.com/img/a4145332224_10.jpg",
       html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1681443368/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/may-the-forest-outlive-us">May The Forest Outlive Us by xor</a></iframe>`,
       bandcamp:     "https://xoravl.bandcamp.com/album/may-the-forest-outlive-us",
@@ -24,7 +24,7 @@ export default function Releases() {
     {
       title:        "Waiting",
       release_date: "March 8, 2024",
-      info:         "Synthpop single. Written and recorded at Bannik Knob.",
+      info:         "Synthpop single. Written and recorded at Bannik Knob. Mastered by Maurizio Baggio.",
       image_url:    "https://f4.bcbits.com/img/a1964065498_10.jpg",
       html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=1654534229/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/track/waiting">waiting by xor</a></iframe>`,
       bandcamp:     "https://xoravl.bandcamp.com/track/waiting",
@@ -42,7 +42,7 @@ export default function Releases() {
     {
       title:        "beyond the tall trees somewhere",
       release_date: "April 28, 2023",
-      info:         "5 song synthpop/darkwave EP. Mixed and mastered by Adam McDaniel at Drop of Sun",
+      info:         "5 song synthpop/darkwave EP. Mixed and mastered by Adam McDaniel at Drop of Sun.",
       image_url:    "https://f4.bcbits.com/img/a2092478654_16.jpg",
       html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1160131690/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/beyond-the-tall-trees-somewhere">beyond the tall trees somewhere by xor</a></iframe>`,
       bandcamp:     "https://xoravl.bandcamp.com/album/beyond-the-tall-trees-somewhere",

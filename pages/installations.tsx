@@ -9,6 +9,23 @@ export default function Installations() {
             <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
               <div className='mb-8'>
                 <h2 className='font-semibold text-xl'>
+                  concrète radio
+                </h2>
+                <p className='text-sm mb-6'>
+                  May 3, 2025
+                </p>
+                <img src='' className='lg-rounded'/>
+                <p className="mb-4">
+                  A participatory installation for the Black Mountain College Museum's (Re)HAPPENING
+                  that facilitates a shared listening experience where
+                  attendees are encouraged to record their own tracks and mix/remix it with others. 
+                </p>
+              </div>
+
+              <hr className='my-4'/>
+
+              <div className='mb-8'>
+                <h2 className='font-semibold text-xl'>
                   Animal Tracks
                 </h2>
                 <p className='text-sm mb-6'>
