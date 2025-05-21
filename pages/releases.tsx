@@ -15,7 +15,7 @@ export default function Releases() {
     {
       title:        "May the Forest Outlive Us",
       release_date: "June 20, 2024",
-      info:         "Ambient EP on Ceremony of Seasons. Written and recorded at Bannik Knob. Mastered by Marcus Miller at HoloSuite Mastering ",
+      info:         "Ambient EP on Ceremony of Seasons. Written and recorded at Bannik Knob. Mastered by Marcus Miller at HoloSuite Mastering.",
       image_url:    "https://f4.bcbits.com/img/a4145332224_10.jpg",
       html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1681443368/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/may-the-forest-outlive-us">May The Forest Outlive Us by xor</a></iframe>`,
       bandcamp:     "https://xoravl.bandcamp.com/album/may-the-forest-outlive-us",
@@ -137,9 +137,9 @@ export default function Releases() {
         <div className="flex flex-wrap -mx-4">
           {
             releases.map((release) => <Release release={release} />)
-          } 
+          }
         </div>
       </div>
     </Layout>
   )
-} 
+}
