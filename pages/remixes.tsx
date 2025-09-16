@@ -14,6 +14,16 @@ export default function Remixes() {
     //     spotify:      ""
     // },
     {
+      title:        "BOB11",
+      release_date: "May 16, 2025",
+      info:         "by Social Caterpillar",
+      image_url:    "https://f4.bcbits.com/img/a0555907959_10.jpg",
+      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2709579772/size=small/bgcol=333333/linkcol=e99708/track=2188749201/transparent=true/" seamless><a href="https://socialcaterpillar.bandcamp.com/album/disappearing-mouths-2">Disappearing Mouths by Social Caterpillar</a></iframe>`,
+      bandcamp:     "https://socialcaterpillar.bandcamp.com/track/bob11-xor-remix-2",
+      spotify:      "https://open.spotify.com/track/4J7uu1PWNjU4xX6QUJXZkq?si=cb9b34e2f7d949c7",
+      official:     true
+    },
+    {
         title:        "Unfurling Putridy (Hurricane Helene remix)",
         release_date: "November 11, 2024",
         info:         "by Cave Grace",
