@@ -26,7 +26,7 @@ export default function Remixes() {
     {
         title:        "Unfurling Putridy (Hurricane Helene remix)",
         release_date: "November 11, 2024",
-        info:         "by Cave Grace",
+        info:         "by Cave Grave",
         image_url:    "",
         html:         ``,
         bandcamp:     "",

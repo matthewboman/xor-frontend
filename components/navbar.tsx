@@ -62,9 +62,9 @@ const Navbar = () => {
             {/* <Link href="/performances" className="text-gray-800 hover:text-gray-600">
               performances
             </Link> */}
-            <Link href="/bio" className="text-gray-800 hover:text-gray-600">
+            {/* <Link href="/bio" className="text-gray-800 hover:text-gray-600">
               bio
-            </Link>
+            </Link> */}
             <Dropdown title={'etc'} links={etc} />
           </div>
 

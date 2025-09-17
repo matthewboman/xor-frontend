@@ -20,6 +20,9 @@ export default function Installations() {
                   that facilitates a shared listening experience where
                   attendees are encouraged to record their own tracks and mix/remix it with others. 
                 </p>
+                <p>
+                  Explore it at <a href="https://concrete-radio.exclusive-or.io/" _target="blank" className="teal">concrete-radio.exclusive-or.io</a>. 
+                </p>
               </div>
 
               <hr className='my-4'/>

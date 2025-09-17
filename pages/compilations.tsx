@@ -3,15 +3,15 @@ import Release from '../components/release'
 
 export default function Compilations() {
   const compilations = [
-    // {
-    //     title:        "",
-    //     release_date: "",
-    //     info:         "",
-    //     image_url:    "",
-    //     html:         ``,
-    //     bandcamp:     "",
-    //     spotify:      ""
-    // },
+    {
+        title:        "Of Landfall and Wildfires",
+        release_date: "September 26, 2025",
+        info:         "Curated by Asheville, NC based Chandra Shukla (Erototox Decodings) and Tim Gormley (Ceremony of Seasons) immediately following the destruction of Western North Carolina by Hurricane Helene.",
+        image_url:    "https://f4.bcbits.com/img/a0689991173_10.jpg",
+        html:         ``,
+        bandcamp:     "https://ceremonyofseasons.bandcamp.com/album/of-landfall-and-wildfires",
+        spotify:      ""
+    },
     {
       title:        "Animal Tracks",
       release_date: "September 27, 2024",
