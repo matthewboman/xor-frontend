@@ -3,6 +3,54 @@ import Video  from "../components/video"
 
 export default function Remixes() {
   const videos = [
+    // {
+    //   title:  "The Malady of the Infinite",
+    //   link:   "https://www.youtube.com/watch?v=WLBsnxEGtBE",
+    //   src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/WLBsnxEGtBE?si=yyfwewNObVMjdJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    //   author: "video by Madalyn Wofford"
+    // },
+    // {
+    //   title:  "Hell",
+    //   link:   "https://www.youtube.com/watch?v=JQsqhtAY-aQ",
+    //   src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/JQsqhtAY-aQ?si=H4t0CkT6ZUFAbEYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    //   author: "video by Brett Naucke"
+    // },
+    // {
+    //   title:  "Ever Chaning",
+    //   link:   "https://www.youtube.com/watch?v=sz8Y3UbyQ74",
+    //   src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/sz8Y3UbyQ74?si=v49D0sGGTANfcjgZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    //   author: "video by Tristan Turner"
+    // },
+    {
+      title:  "Wave Returns to the Ocean",
+      link:   "https://www.youtube.com/watch?v=7BbgwWEcAcE",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/7BbgwWEcAcE?si=Zf1SteamT8O0_vlZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: ""
+    },
+    {
+      title:  "Swells",
+      link:   "https://www.youtube.com/watch?v=BIiOt1FKQ3A",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/BIiOt1FKQ3A?si=2hR0rZKmrisSgDga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: "video by LeeAnn Peppers"
+    },
+    {
+      title:  "Laurel Holler",
+      link:   "https://www.youtube.com/watch?v=HoIzZ2NeQPQ",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/HoIzZ2NeQPQ?si=TyY_bA9_9gGGsbqS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: "video by Mica Rutkowski"
+    },
+    {
+      title:  "Anomie",
+      link:   "https://www.youtube.com/watch?v=ZhhH3w8r3uY",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/ZhhH3w8r3uY?si=dwtrvgDMM4-M8T5x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: "video by Tony Rolando"
+    },
+    {
+      title:  "Unwound",
+      link:   "https://www.youtube.com/watch?v=zSegsdutFfA",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/zSegsdutFfA?si=6IZOsrFe9o-wwxSB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: ""
+    },
     {
       title: "I don't see lights on the mountain anymore",
       link:  "https://youtu.be/aTJa9DyDM6s",
@@ -131,24 +179,28 @@ export default function Remixes() {
   return (
     <Layout>
       <div className="container mx-auto px-4 mb-10">
-        <div className='mb-4 text-center'>
-          <h2 className='font-semibold text-2xl'>Videos</h2>
-        </div>
-        <div className="flex flex-wrap -mx-4 mb-4">
-          {
-            videos.map((video) => <Video key={video.title} video={video} />)
-          }
-        </div>
+        <div className='mt-4 mb-8 flex justify-center -mx-4'>
+          <div className="w-full md:w-3/4 p-4">
+            <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
+              <div className='mb-8'>
+                <div className='mb-4 text-center'>
+                  <h2 className='font-semibold text-2xl'>Videos</h2>
+                </div>
+                {
+                  videos.map((video) => <Video key={video.title} video={video} /> )
+                }
+              </div>
 
-        <div className='mb-4 text-center'>
-          <h2 className='font-semibold text-2xl'>Streams</h2>
-        </div>
-        <div className="flex flex-wrap -mx-4 mb-4">
-          {
-            streams.map((stream) => <Video key={stream.title} video={stream} />)
-          }
+                <div className='mb-4 text-center'>
+                  <h2 className='font-semibold text-2xl'>Streams</h2>
+                </div>
+                {
+                  streams.map((video) => <Video key={video.title} video={video} /> )
+                }
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
   )
-} 
+}

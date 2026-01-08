@@ -39,18 +39,16 @@ export default function Covers() {
   return (
     <Layout>
       <div className="container mx-auto px-4 mb-10">
-        {/* <div className="my-4">
-          <p>
-            I made a goal for 2021 to record a cover song each month. After 3 months, 
-            it stopped being fun and felt more like a chore. I might pick this back up at some point.
-          </p>
-        </div> */}
-        <div className="flex flex-wrap -mx-4">
-          {
-            covers.map((cover) => cover.official ? <Release key={cover.title} release={cover} /> : <Video key={cover.title} video={cover} />)
-          } 
+        <div className='mt-4 mb-8 flex justify-center -mx-4'>
+          <div className="w-full md:w-3/4 p-4">
+            <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
+              {
+                covers.map((release) => <Release key={release.title} release={release} /> )
+              }
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
   )
-} 
+}

@@ -1,9 +1,28 @@
 import Layout  from '../components/layouts'
-import Release from "../components/release"
-import Video   from "../components/video"
+import Release from "../components/min_release"
 
 export default function Releases() {
   const releases = [
+    {
+      title:        "Present Tense",
+      release_date: "Feburary 20, 2026",
+      info:         "Ambient/drone album. Cello by Ashlee Booth. Mastered by Rafael Anton Irisarri",
+      image_url:    "",
+      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=200245700/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/present-tense">Present Tense by xor</a></iframe>`,
+      bandcamp:     "https://xoravl.bandcamp.com/album/present-tense",
+      spotify:      "",
+      official:     true
+    },
+        {
+      title:        "Generative #1",
+      release_date: "October 2025",
+      info:         "Edition of 15 one-of-a-kind cassette tapes recorded from a generative patch on a modular synth.",
+      image_url:    "",
+      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2949791388/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/generative-1-october-2025">Generative 1 - October 2025 by xor</a></iframe>`,
+      bandcamp:     "https://xoravl.bandcamp.com/album/generative-1-october-2025",
+      spotify:      "",
+      official:     true
+    },
     {
       title:        "Cantus in Memoriam Benjamin Britten",
       release_date: "September 26, 2025",
@@ -126,45 +145,49 @@ export default function Releases() {
       spotify:      "https://open.spotify.com/album/6imTCxkweX9XnvmQMkK9De?si=WPPIb6qJTmGj1bqz81ipzQ",
       official:     true
     },
-    {
-      title:        "Fractals (2)",
-      release_date: "May 1, 2016",
-      info:         "Ambient and downtempo music written and recorded in 2016",
-      image_url:    "https://f4.bcbits.com/img/a1357197053_10.jpg",
-      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=557445508/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/fr-ct-ls-2016">FR△CT△LS (2016) by FR△CT△LS</a></iframe>`,
-      bandcamp:     "https://xoravl.bandcamp.com/album/fr-ct-ls-2016",
-      spotify:      "",
-      official:     true
-    },
-    {
-      title:        "Fractals",
-      release_date: "November 1, 2015",
-      info:         "Ambient music written and recorded in 2015",
-      image_url:    "https://f4.bcbits.com/img/a2937665653_10.jpg",
-      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2874414542/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/fr-ct-ls-2015">FR△CT△LS (2015) by FR△CT△LS</a></iframe>`,
-      bandcamp:     "https://xoravl.bandcamp.com/album/fr-ct-ls-2015",
-      spotify:      "",
-      official:     true
-    },
-    {
-      title:        "before",
-      release_date: "December 21, 2012",
-      info:         "Assorted tracks written before and during 2012",
-      image_url:    "https://f4.bcbits.com/img/a3784693788_10.jpg",
-      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3673301834/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/before">before by xor</a></iframe>`,
-      bandcamp:     "https://xoravl.bandcamp.com/album/before",
-      spotify:      "",
-      official:     true
-    }
+    // {
+    //   title:        "Fractals (2)",
+    //   release_date: "May 1, 2016",
+    //   info:         "Ambient and downtempo music written and recorded in 2016",
+    //   image_url:    "https://f4.bcbits.com/img/a1357197053_10.jpg",
+    //   html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=557445508/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/fr-ct-ls-2016">FR△CT△LS (2016) by FR△CT△LS</a></iframe>`,
+    //   bandcamp:     "https://xoravl.bandcamp.com/album/fr-ct-ls-2016",
+    //   spotify:      "",
+    //   official:     true
+    // },
+    // {
+    //   title:        "Fractals",
+    //   release_date: "November 1, 2015",
+    //   info:         "Ambient music written and recorded in 2015",
+    //   image_url:    "https://f4.bcbits.com/img/a2937665653_10.jpg",
+    //   html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2874414542/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/fr-ct-ls-2015">FR△CT△LS (2015) by FR△CT△LS</a></iframe>`,
+    //   bandcamp:     "https://xoravl.bandcamp.com/album/fr-ct-ls-2015",
+    //   spotify:      "",
+    //   official:     true
+    // },
+    // {
+    //   title:        "before",
+    //   release_date: "December 21, 2012",
+    //   info:         "Assorted tracks written before and during 2012",
+    //   image_url:    "https://f4.bcbits.com/img/a3784693788_10.jpg",
+    //   html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3673301834/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/before">before by xor</a></iframe>`,
+    //   bandcamp:     "https://xoravl.bandcamp.com/album/before",
+    //   spotify:      "",
+    //   official:     true
+    // }
   ]
 
   return (
     <Layout>
       <div className="container mx-auto px-4 mb-10">
-        <div className="flex flex-wrap -mx-4">
-          {
-            releases.map((release) => release.official ? <Release key={release.title} release={release} /> :  <Video key={release.title} video={release}/>)
-          }
+        <div className='mt-4 mb-8 flex justify-center -mx-4'>
+          <div className="w-full md:w-3/4 p-4">
+            <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
+              {
+                releases.map((release) => <Release key={release.title} release={release} /> )
+              }
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

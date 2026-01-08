@@ -11,6 +11,18 @@ const Navbar = () => {
 
   const etc = [
     {
+      title: 'links',
+      url:   '/links'
+    },
+    {
+      title: 'installations',
+      url:   '/installations'
+    },
+    {
+      title: 'digital',
+      url:   '/digital'
+    },
+    {
       title: 'mastering || mixing',
       url:   '/mastering'
     },
@@ -18,10 +30,6 @@ const Navbar = () => {
       title: 'bannik knob',
       url:   '/bannik-knob'
     },
-    {
-      title: 'installations',
-      url:   '/installations'
-    }
   ]
 
   const music = [
@@ -37,10 +45,10 @@ const Navbar = () => {
       title: "compilations",
       url:   "/compilations"
     },
-    {
-      title: "covers",
-      url:   "/covers"
-    },
+    // {
+    //   title: "covers",
+    //   url:   "/covers"
+    // },
   ]
 
   return (

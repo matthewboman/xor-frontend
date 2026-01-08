@@ -1,4 +1,5 @@
 import Layout  from '../components/layouts'
+import Video   from '../components/video'
 
 export default function Links() {
     const listen = [
@@ -15,20 +16,35 @@ export default function Links() {
       // { url: '', title: '' },
     ]
 
+    const video = {
+      title:  "Wave Returns to the Ocean",
+      link:   "https://www.youtube.com/watch?v=7BbgwWEcAcE",
+      src:    ``,
+      author: ""
+    }
+
     return (
       <Layout>
         <div className="container mx-auto px-4 mb-10">
-          <div className="flex flex-wrap -mx-4">
-            <div className="p-[4rem] bg-black bg-opacity-40 rounded-lg">
-            <a href="https://xoravl.bandcamp.com/" target='_blank' className="block mb-1">bandcamp</a>
-            <a href="https://www.youtube.com/@xor5352" target='_blank' className="block mb-1">youtube</a>
-            <a href="https://github.com/matthewboman" target='_blank' className="block mb-1">github</a>
+          <div className='mt-4 mb-8 flex justify-center -mx-4'>
+            <div className="w-full md:w-3/4 p-4">
+              <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
 
-            <h2 className='mt-3 mb-1 font-semibold'>- listen -</h2>
-            { listen.map(l => <a href={l.url} target='_blank' className="block mb-1">{l.title}</a>)}
+              <div className='relative w-full aspect-16-9 rounded-lg mb-8'>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/7BbgwWEcAcE?si=Zf1SteamT8O0_vlZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
 
-            <h2 className='mt-3 mb-1 font-semibold'>- follow -</h2>
-            { follow.map(f => <a href={f.url} target='_blank' className="block mb-1">{f.title}</a>)}
+              <a href="https://xoravl.bandcamp.com/" target='_blank' className="block mb-1 hover-orange">bandcamp</a>
+              <a href="https://www.youtube.com/@xor5352" target='_blank' className="block mb-1 hover-orange">youtube</a>
+              <a href="https://github.com/matthewboman" target='_blank' className="block mb-1 hover-orange">github</a>
+
+              <h2 className='mt-4 mb-1 font-semibold'>- listen -</h2>
+              { listen.map(l => <a href={l.url} target='_blank' className="block mb-1 hover-orange">{l.title}</a>)}
+
+              <h2 className='mt-4 mb-1 font-semibold'>- follow -</h2>
+              { follow.map(f => <a href={f.url} target='_blank' className="block mb-1 hover-orange">{f.title}</a>)}
+
+              </div>
             </div>
           </div>
         </div>

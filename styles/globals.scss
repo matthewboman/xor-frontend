@@ -6,6 +6,7 @@
 body {
   padding: 0 !important;
   margin: 0 !important;
+  font-family: ui-monospace, SFMono-Regular, Menio, Menaco, Consolas, monospace;
 }
 
 .aspect-16-9 {
@@ -26,6 +27,12 @@ body {
 }
 .background-teal {
   background-color: #54e8c5;
+}
+.hover-orange:hover {
+  color: orange;
+}
+.orange-text {
+  color: orange;
 }
 .teal-orange {
   border: 1px solid #54e8c5;

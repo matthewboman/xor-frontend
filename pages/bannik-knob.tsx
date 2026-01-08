@@ -73,15 +73,6 @@ export default function BannikKnob() {
             <img src="images/bannik-knob.jpg" className='rounded-lg'/>
           </div>
         </div>
-        <hr className='white'/>
-        <div className='my-8 text-center'>
-          <h2 className='font-semibold text-2xl mb'>Releases</h2>
-        </div>
-        <div className="flex flex-wrap -mx-4">
-          {
-            releases.map((release) => <Release release={release} />)
-          }
-        </div>
       </div>
     </Layout>
   )

@@ -1,5 +1,5 @@
 import Layout from '../components/layouts'
-import Release from "../components/release"
+import Release from "../components/min_release"
 
 export default function Mastering() {
   const mastering = [
@@ -19,6 +19,7 @@ export default function Mastering() {
       image_url:    "https://f4.bcbits.com/img/a3328792621_16.jpg",
       html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2328967875/size=small/bgcol=333333/linkcol=e99708/track=2684916475/transparent=true/" seamless><a href="https://swannatopia.bandcamp.com/album/ambient-radiance">Ambient Radiance by Swannatopia presents:</a></iframe>`,
       bandcamp:     "https://swannatopia.bandcamp.com/track/red-xor",
+      link:         "https://swannatopia.bandcamp.com/track/red-xor",
       spotify:      ""
     },
     {
@@ -28,6 +29,7 @@ export default function Mastering() {
       image_url:    "https://f4.bcbits.com/img/a3750920263_10.jpg",
       html:         ``,
       bandcamp:     "https://solsolsolmusic.bandcamp.com/album/limina",
+      link:         "https://solsolsolmusic.bandcamp.com/album/limina",
       spotify:      "https://open.spotify.com/album/33rFuE9Om1Rm23ohTsizD8?si=j7wdEiBORbSVrWMeS62LTQ"
     },
   ]
@@ -35,16 +37,21 @@ export default function Mastering() {
   return (
     <Layout>
       <div className="container mx-auto px-4 mb-10">
-        <div className='my-4 text-center'>
-          <h2 className='font-semibold text-2xl mb-6'>Mastering</h2>
-        </div>
-        <div className='my-4'>
-          <p>for quotes email xor[dot]whatever[at]gmail</p>
-        </div>
-        <div className="flex flex-wrap -mx-4">
-          {
-            mastering.map((album) => <Release release={album} />)
-          }
+        <div className='mt-4 mb-8 flex justify-center -mx-4'>
+          <div className="w-full md:w-3/4 p-4">
+            <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
+              <h2 className='font-semibold text-2xl mb-2'>Mastering</h2>
+
+              <div className='mb-8'>
+                <p>for quotes email xor[dot]music[at]protonmail[dot]com</p>
+              </div>
+
+              {
+                mastering.map((album) => <Release release={album} />)
+              }
+
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

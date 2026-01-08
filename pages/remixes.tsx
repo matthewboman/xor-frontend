@@ -1,6 +1,5 @@
 import Layout  from '../components/layouts'
-import Release from "../components/release"
-import Video   from "../components/video"
+import Release from "../components/min_release"
 
 export default function Remixes() {
   const remixes = [
@@ -149,10 +148,14 @@ export default function Remixes() {
   return (
     <Layout>
       <div className="container mx-auto px-4 mb-10">
-        <div className="flex flex-wrap -mx-4">
-          {
-            remixes.map((remix) => remix.official ? <Release key={remix.title} release={remix} /> : <Video key={remix.title} video={remix} />)
-          }
+        <div className='mt-4 mb-8 flex justify-center -mx-4'>
+          <div className="w-full md:w-3/4 p-4">
+            <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
+              {
+                remixes.map((release) => <Release key={release.title} release={release} /> )
+              }
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
