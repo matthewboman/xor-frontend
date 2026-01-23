@@ -8,7 +8,7 @@ export default function Bio() {
           <div className="w-full md:w-3/4 p-4">
             <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
               <p className="mb-4">
-                Matthew lives on the eastern continental divide. He grows over a dozen
+                Matthew lives atop a mountain on the eastern continental divide. He grows over a dozen
                 fruit and nut trees. Ever year, he plants more berries. He has been
                 bitten by a copperhead and would not recommend it. He also makes music
                 and art under the name XOR.
@@ -17,7 +17,6 @@ export default function Bio() {
                 XOR is a regular collaborator with the <a href="https://swannatopia.com/" target="_blank" className='orange-text'>Swannatopia experimental art club</a>.
                 Many great artists have made music videos for the tracks on
                 his upcoming album <a href="https://xoravl.bandcamp.com/album/present-tense" target="_blank" className='orange-text'>Present Tense</a>.
-                Matthew has also made a couple of them.
               </p>
               <div className='mt-[3rem] flex justify-center'>
                 <img src="./images/drones.jpg" className='rounded-lg'/>

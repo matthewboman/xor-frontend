@@ -1,9 +1,8 @@
 import Layout  from '../components/layouts'
-import Video   from '../components/video'
 
 export default function Links() {
     const listen = [
-      { url: '', title: 'tidal' },
+      // { url: '', title: 'tidal' },
       { url: 'https://open.spotify.com/artist/1IoBqMaTc6jauT6Am80dqg', title: 'spotify' },
       { url: 'https://music.apple.com/us/artist/xor/1483609660', title: 'apple' },
       { url: 'https://music.amazon.com/artists/B005E4ONO6/xor', title: 'amazon' },
@@ -16,13 +15,6 @@ export default function Links() {
       // { url: '', title: '' },
     ]
 
-    const video = {
-      title:  "Wave Returns to the Ocean",
-      link:   "https://www.youtube.com/watch?v=7BbgwWEcAcE",
-      src:    ``,
-      author: ""
-    }
-
     return (
       <Layout>
         <div className="container mx-auto px-4 mb-10">
@@ -31,7 +23,7 @@ export default function Links() {
               <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
 
               <div className='relative w-full aspect-16-9 rounded-lg mb-8'>
-                <iframe className="w-full h-full" src="https://www.youtube.com/embed/7BbgwWEcAcE?si=Zf1SteamT8O0_vlZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/sz8Y3UbyQ74?si=d8XfC0ehO4oEf22H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
 
               <a href="https://xoravl.bandcamp.com/" target='_blank' className="block mb-1 hover-orange">bandcamp</a>
