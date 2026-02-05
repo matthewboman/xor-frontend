@@ -9,18 +9,18 @@ export default function Remixes() {
     //   src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/WLBsnxEGtBE?si=yyfwewNObVMjdJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
     //   author: "video by Madalyn Wofford"
     // },
-    // {
-    //   title:  "Hell",
-    //   link:   "https://www.youtube.com/watch?v=JQsqhtAY-aQ",
-    //   src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/JQsqhtAY-aQ?si=H4t0CkT6ZUFAbEYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-    //   author: "video by Brett Naucke"
-    // },
-    // {
-    //   title:  "Ever Chaning",
-    //   link:   "https://www.youtube.com/watch?v=sz8Y3UbyQ74",
-    //   src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/sz8Y3UbyQ74?si=v49D0sGGTANfcjgZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-    //   author: "video by Tristan Turner"
-    // },
+    {
+      title:  "Hell",
+      link:   "https://www.youtube.com/watch?v=JQsqhtAY-aQ",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/JQsqhtAY-aQ?si=H4t0CkT6ZUFAbEYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: "video by Brett Naucke"
+    },
+    {
+      title:  "Ever Changing",
+      link:   "https://www.youtube.com/watch?v=sz8Y3UbyQ74",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/sz8Y3UbyQ74?si=v49D0sGGTANfcjgZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: "video by Tristan Turner"
+    },
     {
       title:  "Wave Returns to the Ocean",
       link:   "https://www.youtube.com/watch?v=7BbgwWEcAcE",
