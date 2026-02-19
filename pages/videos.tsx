@@ -3,12 +3,12 @@ import Video  from "../components/video"
 
 export default function Remixes() {
   const videos = [
-    // {
-    //   title:  "The Malady of the Infinite",
-    //   link:   "https://www.youtube.com/watch?v=WLBsnxEGtBE",
-    //   src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/WLBsnxEGtBE?si=yyfwewNObVMjdJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-    //   author: "video by Madalyn Wofford"
-    // },
+    {
+      title:  "The Malady of the Infinite",
+      link:   "https://www.youtube.com/watch?v=WLBsnxEGtBE",
+      src:    `<iframe class="w-full h-full" src="https://www.youtube.com/embed/WLBsnxEGtBE?si=yyfwewNObVMjdJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+      author: "video by Madalyn Wofford"
+    },
     {
       title:  "Hell",
       link:   "https://www.youtube.com/watch?v=JQsqhtAY-aQ",

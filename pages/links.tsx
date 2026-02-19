@@ -23,7 +23,7 @@ export default function Links() {
               <div className='p-[4rem] bg-black bg-opacity-40 rounded-lg'>
 
               <div className='relative w-full aspect-16-9 rounded-lg mb-8'>
-                <iframe className="w-full h-full" src="https://www.youtube.com/embed/JQsqhtAY-aQ?si=evnYBQ9jzDn6C4lN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/WLBsnxEGtBE?si=yyfwewNObVMjdJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
 
               <a href="https://xoravl.bandcamp.com/" target='_blank' className="block mb-1 hover-orange">bandcamp</a>

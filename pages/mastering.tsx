@@ -3,15 +3,16 @@ import Release from "../components/min_release"
 
 export default function Mastering() {
   const mastering = [
-    // {
-    //     title:        "",
-    //     release_date: "",
-    //     info:         "",
-    //     image_url:    "",
-    //     html:         ``,
-    //     bandcamp:     "",
-    //     spotify:      ""
-    // },
+    {
+        title:        "Ants d'ants // Blue Goose Beat",
+        release_date: "January 3, 2026",
+        info:         "cassingle released 1/3/2026 at RIBBON TIME! at LamplightAVL edition of ~100",
+        image_url:    "https://f4.bcbits.com/img/a2708068633_10.jpg",
+        html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2760681314/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://swannatopia.bandcamp.com/album/ants-dants-blue-goose-beat">Ants D&#39;Ants / Blue Goose Beat by XOR / Superflower</a></iframe>`,
+        bandcamp:     "https://swannatopia.bandcamp.com/album/ants-dants-blue-goose-beat",
+        link:         "https://swannatopia.bandcamp.com/album/ants-dants-blue-goose-beat",
+        spotify:      ""
+    },
     {
       title:        "Ambient Radiance (compilation)",
       release_date: "April 20, 2024",

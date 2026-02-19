@@ -85,16 +85,16 @@ export default function Releases() {
       spotify:      "https://open.spotify.com/album/3PBApVdacFrKqR15NjU7k9?si=8krnITUNSqONS8ebjtek0g",
       official:     true
     },
-    {
-      title:        "On the spot",
-      release_date: "March 20, 2023",
-      info:         "Modular piece written for Ashevile's Modular on the Spot, September 2022.",
-      image_url:    "https://f4.bcbits.com/img/a2025630180_10.jpg",
-      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=417905674/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/on-the-spot">on the spot by xor</a></iframe>`,
-      bandcamp:     "https://xoravl.bandcamp.com/album/on-the-spot",
-      spotify:      "",
-      official:     true
-    },
+    // {
+    //   title:        "On the spot",
+    //   release_date: "March 20, 2023",
+    //   info:         "Modular piece written for Ashevile's Modular on the Spot, September 2022.",
+    //   image_url:    "https://f4.bcbits.com/img/a2025630180_10.jpg",
+    //   html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=417905674/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/album/on-the-spot">on the spot by xor</a></iframe>`,
+    //   bandcamp:     "https://xoravl.bandcamp.com/album/on-the-spot",
+    //   spotify:      "",
+    //   official:     true
+    // },
     {
       title:        "Ephemeral tracks, vol. 1",
       release_date: "March 18, 2022",
@@ -105,16 +105,16 @@ export default function Releases() {
       spotify:      "https://open.spotify.com/album/0VuYI8LrtI9YR0Fqpnsshj?si=0y84LQCBRYackf75K4svKw",
       official:     true
     },
-    {
-      title:        "Long Shadows",
-      release_date: "December 3, 2021",
-      info:         "",
-      image_url:    "https://f4.bcbits.com/img/a4098735292_10.jpg",
-      html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2324987125/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/track/long-shadows">Long Shadows by xor</a></iframe>`,
-      bandcamp:     "https://xoravl.bandcamp.com/track/long-shadows",
-      spotify:      "",
-      official:     true
-    },
+    // {
+    //   title:        "Long Shadows",
+    //   release_date: "December 3, 2021",
+    //   info:         "",
+    //   image_url:    "https://f4.bcbits.com/img/a4098735292_10.jpg",
+    //   html:         `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2324987125/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://xoravl.bandcamp.com/track/long-shadows">Long Shadows by xor</a></iframe>`,
+    //   bandcamp:     "https://xoravl.bandcamp.com/track/long-shadows",
+    //   spotify:      "",
+    //   official:     true
+    // },
     {
       title:        "XOR",
       release_date: "July 30, 2021",
